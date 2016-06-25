@@ -1,0 +1,35 @@
+body {
+    margin: 1em;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+input {
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.compass {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 80vmin;
+    height: 80vmin;
+    margin: -40vmin;
+    background: url(compass.svg) 50% 50% no-repeat;
+    background-size: contain;
+    will-change: transform;
+    transition: transform .25s ease;
+}
+
+.needle {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 0;
+    margin: -40vmin -2px;
+    border-top: 40vmin solid #f00;
+    border-bottom: 40vmin solid #000;
+    opacity: .5;
+}
